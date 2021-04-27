@@ -33,7 +33,7 @@ function Search(props) {
           <div className="sendBtn" onClick={() => props.send()}>
             Translate
           </div>
-          <p> Choosed language: {props.dataLang}</p>
+          <p>Choosed language: {props.dataLang}</p>
         </div>
       </div>
     </>
