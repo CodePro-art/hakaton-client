@@ -16,10 +16,12 @@ function Navbar() {
         </span>
           
       </div>
-      <nav role="navigation" class="primary-navigation">
+      <nav role="navigation" className="primary-navigation">
         <ul className="nav-ul">
           <li><a href="/">About Us</a></li>
-          <li><a href="/">Stories</a></li>
+          <li><a href="/">Stories</a>
+            
+          </li>
           <li><a href="/">Games</a></li>
           <li><a href="/">Poetry</a></li>
         </ul>
