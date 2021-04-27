@@ -1,5 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stalemate&display=swap');
+
 .navbar {
+  display: flex;
   width: 100pw;
   height: 80px;
-  background-color: lavender;
+  background-color: rgb(176, 174, 246);
+  justify-content: space-between;
+}
+.logo-container{
+  display: flex;
+  align-items: center;
+  font-family: 'Great Vibes', cursive;
+  font-size: 40px;
+  margin: 15px;
+}
+
+.primery{
+  font-family: 'Niconne', cursive;
+  color: rgb(0, 140, 255);
+  text-shadow: -1px 0 rgb(138, 253, 253), 0 1px rgb(138, 253, 253), 1px 0 rgb(138, 253, 253), 0 -1px rgb(138, 253, 253);
+}
+.secondary{
+  font-family: 'Fredericka the Great', cursive;
+  color: rgb(192, 236, 71);
+  text-shadow: -1px 0 green, 0 1px green, 1px 0 green, 0 -1px green;
+}
+.nav-ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-ul li a{
+  font-size: larger;
+  color: #fff;
+  text-decoration: none;
+  margin: 10px;
+  transition: .3s;
+}
+
+.nav-ul li a:hover{
+  color: #B0AEF6;
+  text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
 }
