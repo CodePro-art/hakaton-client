@@ -26,9 +26,9 @@ function Search(props) {
               <option value="hebrew">עברית</option>
             </select>
           </span>
-          <butto className="sendBtn" onClick={() => props.send()}>
+          <button className="sendBtn" onClick={() => props.send()}>
             Translate
-          </butto>
+          </button>
         </div>
       </div>
     </div>
