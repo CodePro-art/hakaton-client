@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import axios from "axios";
+import React from "react";
+
 import "./Search.css";
 
 function Search(props) {
@@ -19,17 +19,22 @@ function Search(props) {
         </div>
         <div className="langBox">
           <span className="searchText">Choose a language : </span>
-          <select className="select" name="lang" id="lang">
+          <select
+            className="select"
+            onChange={(e) => props.lang(e.target.value)}
+            name="lang"
+            id="lang"
+          >
             <option value="english">English</option>
-            <option value="arabic">Arabic</option>
-            <option value="russion">Russion</option>
-            <option value="hebrew">Hebrew</option>
+            <option value="arabic">عرب</option>
+            <option value="russian">Русский</option>
+            <option value="hebrew">עברית</option>
           </select>
           <div className="sendBtn" onClick={() => props.send()}>
             Translate
           </div>
+          <p>Choosed language: {props.dataLang}</p>
         </div>
-        <p>{props.data}</p>
       </div>
     </>
   );
