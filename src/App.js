@@ -15,6 +15,7 @@ function App() {
     try {
       const result = await axios.post("/url", {
         url: search,
+        language: lang,
       });
       console.log(result.data);
       setData(result.data);
