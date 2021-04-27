@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Display.css";
 
 function Display(props) {
@@ -19,7 +19,7 @@ function Display(props) {
     <div className="display">
       <div className="display_header">
         <h2 className="display_title">{props.data.title}</h2>
-        <img className="display_img" src={props.data.image}/>
+        <img className="display_img" src={props.data.image} alt="story"/>
       </div>
       <p className="display_txt">{props.data.content}</p>
     </div>
