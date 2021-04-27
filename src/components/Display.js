@@ -5,7 +5,6 @@ function Display(props) {
   // page open - props === null;
   // story loding - props === 'loading'
   // get story data - props === obj
-  console.log(props.data)
   const renderContent = () => {
       return (
         <React.Fragment>
