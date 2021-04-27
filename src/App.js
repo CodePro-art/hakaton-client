@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Search from "./components/Search";
 import Display from "./components/Display";
@@ -28,10 +28,12 @@ function App() {
     }
   };
 
+  // Get list of stories
   const getCards = async () => {
     try {
-      const result = await axios.get("http://localhost:3001/url");
+      const result = await axios.get("http://localhost:3001/");
       console.log(result);
+      setCards(result);
     } catch (e) {
       console.log(e.error);
     }
@@ -41,8 +43,11 @@ function App() {
   const sendUrlToSearcbar = url => setSearch(url)
 
   // render cards
-  const renderCards = arr => arr.map(card => <Card src={}/>) 
+  const renderCards = arr => arr.map(card => <Card src={""} title={""} url={""} sendUrl={sendUrlToSearcbar}/>) 
 
+  useEffect(() => {
+    getCards();
+  }, [])
   return (
     <div className="app">
       <Navbar />
@@ -54,7 +59,7 @@ function App() {
         lang={setLang}
       />
       <div className="cards-container">
-
+        {renderCards(cards)}
       </div>
       <Card src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyjAVxr9vj1GyDk6pt_xFNlHe_0QwLzkbZng&usqp=CAU" title="Naruto" url="" sendUrl={sendUrlToSearcbar}/>
       <Display data={data} />
