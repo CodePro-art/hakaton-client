@@ -1,4 +1,30 @@
 .display {
-  height: 500px;
+  margin: auto;
+  height: fit-content;
+  padding: 3rem 4rem 6rem 4rem;
   background-color: floralwhite;
+}
+.display_header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  margin: auto;
+}
+.display_title{
+  width: 30%;
+  text-align: center;
+  font-size: 3rem;
+}
+.display_img{
+  width: 70%;
+  max-width: 500px;
+  display: block;
+}
+.display_txt{
+  font-size: 1.5rem;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  padding-top: 3rem;
 }
