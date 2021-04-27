@@ -14,10 +14,10 @@ function Display(props) {
         {align === 'left' ?
           <React.Fragment>
             <h2 className="display_title">{props.data.title}</h2>
-            <img className="display_img" src={props.data.image}/>
+            <img className="display_img" src={props.data.image} alt=""/>
           </React.Fragment> :
           <React.Fragment>
-            <img className="display_img" src={props.data.image}/> 
+            <img className="display_img" src={props.data.image} alt=""/> 
             <h2 className="display_title">{props.data.title}</h2>
           </React.Fragment>
         }
@@ -27,7 +27,7 @@ function Display(props) {
   const renderContent = () => {
       return (
         <React.Fragment>
-          
+          {renderHeader()}
           <div className="display_txt">
             {props.data.content.map((p, indx) => <p key={indx}>{p}</p>)}
           </div>

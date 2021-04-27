@@ -1,5 +1,6 @@
 import React from "react";
 import "./Navbar.css";
+import { BsFillCaretDownFill } from 'react-icons/bs';
 
 function Navbar() {
   return (
@@ -16,10 +17,11 @@ function Navbar() {
         </span>
           
       </div>
-      <nav role="navigation" class="primary-navigation">
+      <nav role="navigation" className="primary-navigation">
         <ul className="nav-ul">
           <li><a href="/">About Us</a></li>
-          <li><a href="/">Stories</a></li>
+          <li><a href="/">Stories <BsFillCaretDownFill size={13}/></a>
+          </li>
           <li><a href="/">Games</a></li>
           <li><a href="/">Poetry</a></li>
         </ul>
