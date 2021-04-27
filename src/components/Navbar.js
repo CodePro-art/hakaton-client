@@ -15,12 +15,11 @@ function Navbar() {
         </span>
           
       </div>
-
       <ul className="nav-ul">
-        <li><a href="">About Us</a></li>
-        <li><a href="">Stories</a></li>
-        <li><a href="">Games</a></li>
-        <li><a href="">Poetry</a></li>
+        <li><a href="/">About Us</a></li>
+        <li><a href="/">Stories</a></li>
+        <li><a href="/">Games</a></li>
+        <li><a href="/">Poetry</a></li>
       </ul>
     </div>
   );
