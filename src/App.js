@@ -6,13 +6,9 @@ import Display from "./components/Display";
 import Navbar from "./components/Navbar";
 
 function App() {
-  const [search, setSearch] = useState(
-    "https://www.adamtsair.co.il/%d7%94%d7%90%d7%9c%d7%95%d7%a3/"
-  );
-  // const [searches, setSearches] = useState([]);
+  const [search, setSearch] = useState("");
   const [data, setData] = useState([]);
-  const [lang, setLang] = useState("");
-  // const [input, setInput] = useState("");
+  const [lang, setLang] = useState("english");
 
   const sendSearch = async () => {
     console.log("Sending search");
@@ -31,7 +27,6 @@ function App() {
   return (
     <div className="app">
       <Navbar />
-
       <Search
         search={setSearch}
         dataLang={lang}
