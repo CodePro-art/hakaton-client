@@ -4,6 +4,7 @@ import axios from "axios";
 import Search from "./components/Search";
 import Display from "./components/Display";
 import Navbar from "./components/Navbar";
+import Card from './components/Card';
 
 function App() {
   const [search, setSearch] = useState("");
@@ -34,6 +35,7 @@ function App() {
         send={sendSearch}
         lang={setLang}
       />
+      <Card src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyjAVxr9vj1GyDk6pt_xFNlHe_0QwLzkbZng&usqp=CAU" title="Naruto" url=""/>
       <Display data={data} />
     </div>
   );
