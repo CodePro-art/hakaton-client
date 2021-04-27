@@ -6,7 +6,7 @@ export default class card extends Component {
     url:this.props.url 
   }
 
-  sendUrl = () => {}
+  sendUrl = () => this.state.url
 
   render() {
     return (
