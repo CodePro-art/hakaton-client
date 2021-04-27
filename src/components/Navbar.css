@@ -16,7 +16,7 @@
   align-items: center;
   font-family: 'Great Vibes', cursive;
   font-size: 40px;
-  margin: 15px;
+  margin: 10px 30px;
 }
 
 .primery{
@@ -35,12 +35,16 @@
   justify-content: center;
   align-items: center;
 }
+.nav-ul li{
+  padding: 1px 10px;
+  border-radius: 20px;
+  margin: 5px;
+}
 
 .nav-ul li a{
   font-size: larger;
   color: #fff;
   text-decoration: none;
-  margin: 10px;
   transition: .3s;
 }
 

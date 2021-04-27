@@ -1,0 +1,14 @@
+.card-container{
+  display: flex;
+  flex-direction: column;
+  background-color: wheat;
+  width: 150px;
+  color: aliceblue;
+  padding: 3px;
+  border-radius: 3px;
+  border: 1px solid black;
+}
+
+.cover{
+  width: 150px;
+}
