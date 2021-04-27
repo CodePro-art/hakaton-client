@@ -41,7 +41,7 @@ function App() {
   const sendUrlToSearcbar = url => setSearch(url)
 
   // render cards
-  const renderCards = arr => arr.map(card => <Card src={}/>) 
+  // const renderCards = arr => arr.map(card => <Card src={}/>) 
 
   return (
     <div className="app">
