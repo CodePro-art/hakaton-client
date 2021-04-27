@@ -11,6 +11,7 @@ function App() {
   const [search, setSearch] = useState("");
   const [data, setData] = useState([]);
   const [lang, setLang] = useState("english");
+  const [cards, setCards] = useState([]);
 
   const sendSearch = async () => {
     console.log("Sending search");
@@ -27,8 +28,20 @@ function App() {
     }
   };
 
+  const getCards = async () => {
+    try {
+      const result = await axios.get("http://localhost:3001/url");
+      console.log(result);
+    } catch (e) {
+      console.log(e.error);
+    }
+  }
+
   // function that sets the url into the searchbar 
   const sendUrlToSearcbar = url => setSearch(url)
+
+  // render cards
+  const renderCards = arr => arr.map(card => <Card src={}/>) 
 
   return (
     <div className="app">
@@ -40,6 +53,9 @@ function App() {
         send={sendSearch}
         lang={setLang}
       />
+      <div className="cards-container">
+
+      </div>
       <Card src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyjAVxr9vj1GyDk6pt_xFNlHe_0QwLzkbZng&usqp=CAU" title="Naruto" url="" sendUrl={sendUrlToSearcbar}/>
       <Display data={data} />
     </div>
