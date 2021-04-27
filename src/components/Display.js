@@ -6,6 +6,7 @@ function Display(props) {
   // page open - props === null;
   // story loding - props === 'loading'
   // get story data - props === obj
+
   console.log(props.data);
   const renderHeader = () => {
     const align = ['en','ru'].includes(props.data.language)? 'left': 'right'

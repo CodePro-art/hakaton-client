@@ -29,6 +29,13 @@
   text-shadow: -1px 0 green, 0 1px green, 1px 0 green, 0 -1px green;
   font-family: 'Akronim', cursive;
 }
+
+.primery:hover{
+  text-shadow: -2px 0 rgb(138, 253, 253), 0 2px rgb(138, 253, 253), 2px 0 rgb(138, 253, 253), 0 -2px rgb(138, 253, 253);
+}
+.secondary:hover{
+  text-shadow: -2px 0 green, 0 2px green, 2px 0 green, 0 -2px green;
+}
 .nav-ul{
   list-style: none;
   display: flex;
@@ -51,8 +58,4 @@
 .nav-ul li a:hover{
   color: #B0AEF6;
   text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
-}
-
-.dropdown{
-  
 }
