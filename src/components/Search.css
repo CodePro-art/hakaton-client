@@ -1,3 +1,66 @@
+.searchContainer {
+  margin-top: 5px;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(230, 228, 204);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* align-items: center; */
+
+  padding-top: 10px;
+}
 .searchBox {
-  margin: auto;
+  width: 50%;
+  justify-items: center;
+  display: flex;
+
+  align-items: center;
+}
+.sendBtn {
+  height: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: beige;
+  border: 2px solid grey;
+  color: rgb(77, 76, 76);
+  border-radius: 5px;
+  padding: 0.4em;
+  margin-left: 50px;
+}
+.search {
+  width: 60%;
+  height: 60%;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.searchLabel {
+  color: grey;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2em;
+  font-weight: 600;
+}
+.searchText {
+  color: grey;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.8em;
+  font-weight: 500;
+}
+.langBox {
+  width: 50%;
+  justify-items: center;
+  display: flex;
+  margin-top: 10px;
+
+  align-items: center;
+}
+.select {
+  width: 25%;
+  height: 80%;
+  margin-left: 20px;
 }

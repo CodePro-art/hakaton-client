@@ -1,16 +1,4 @@
-.sendBtn {
-  background: beige;
-  border: 2px solid black;
-  border-radius: 5px;
-  padding: 0.5em;
-  margin-left: 10px;
-}
 .app {
   width: 100%;
   background-color: bisque;
-}
-.searchBox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
