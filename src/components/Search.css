@@ -6,66 +6,63 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 10px;
+  padding: 10px;
+}
+.search-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.search-wrapper >*{
+  margin: 5px;
 }
 .searchBox {
-  margin-top: 10px;
-  width: 50%;
-  justify-items: center;
   display: flex;
-  align-items: center;
 }
 .sendBtn {
   height: 50%;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: beige;
   border: 3px solid rgb(196, 192, 192);
-  color: rgb(77, 76, 76);
+  color: gray;
   border-radius: 5px;
   padding: 0.4em;
-  margin-left: 50px;
+  cursor: pointer;
+  transition: .3s;
 }
 .sendBtn:hover {
   background: rgb(197, 197, 159);
 }
+.sendBtn:active{
+  background: rgb(139, 139, 139);
+  color: #fff;
+}
+
 .search {
-  width: 57%;
-  height: 80%;
+  width: 60vw;
+  padding: 5px;
   border-radius: 5px;
-  margin-left: 20px;
+  margin: 0px 10px;
   border: 1px solid rgb(231, 231, 198);
 }
 
 .searchText {
   color: grey;
-  font-family: "Times New Roman", Times, serif;
   font-size: 1.7em;
-  font-weight: 500;
 }
 .langBox {
-  width: 50%;
-  justify-items: center;
   display: flex;
-  margin-top: 10px;
-  margin-bottom: 20px;
-
   align-items: center;
 }
 .select {
-  width: 25%;
-  height: 80%;
-  margin-left: 20px;
+  width: auto;
+  padding: 5px 10px;
   border-radius: 5px;
   border: 1px solid beige;
-  color: brown;
+  margin: 0px 10px;
+  outline: none;
 }
 .langBox p {
   color: grey;
-  font-family: "Times New Roman", Times, serif;
   font-size: 1em;
-  font-weight: 500;
   margin-left: 20px;
 }
