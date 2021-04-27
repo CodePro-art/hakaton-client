@@ -4,8 +4,10 @@ import axios from "axios";
 import Search from "./components/Search";
 import Display from "./components/Display";
 import Navbar from "./components/Navbar";
+import Card from './components/Card';
 
 function App() {
+
   const [search, setSearch] = useState("");
   const [data, setData] = useState([]);
   const [lang, setLang] = useState("english");
@@ -24,6 +26,10 @@ function App() {
       console.log(e.error);
     }
   };
+
+  // function that sets the url into the searchbar 
+  const sendUrlToSearcbar = url => setSearch(url)
+
   return (
     <div className="app">
       <Navbar />
@@ -34,6 +40,7 @@ function App() {
         send={sendSearch}
         lang={setLang}
       />
+      <Card src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyjAVxr9vj1GyDk6pt_xFNlHe_0QwLzkbZng&usqp=CAU" title="Naruto" url="" sendUrl={sendUrlToSearcbar}/>
       <Display data={data} />
     </div>
   );
