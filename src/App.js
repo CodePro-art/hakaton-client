@@ -21,7 +21,6 @@ function App() {
         language: lang,
       });
       console.log("in react app, this is the data:");
-      console.log(result.data);
       setData(result.data);
     } catch (e) {
       console.log(e.error);
@@ -32,8 +31,8 @@ function App() {
   const getCards = async () => {
     try {
       const result = await axios.get("http://localhost:3001/");
-      console.log(result);
-      setCards(result);
+      console.log(result.data);
+      setCards(result.data);
     } catch (e) {
       console.log(e.error);
     }
@@ -43,11 +42,12 @@ function App() {
   const sendUrlToSearcbar = url => setSearch(url)
 
   // render cards
-  const renderCards = arr => arr.map(card => <Card src={""} title={""} url={""} sendUrl={sendUrlToSearcbar}/>) 
+  const renderCards = arr => arr.map(card => <Card src={card.image} title={card.title} url={card.url} sendUrl={sendUrlToSearcbar}/>) 
 
   useEffect(() => {
     getCards();
   }, [])
+  
   return (
     <div className="app">
       <Navbar />

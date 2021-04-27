@@ -11,7 +11,7 @@ export default class card extends Component {
   render() {
     return (
       <div className="card-container">
-        <div className="story-tilte">
+        <div className="story-title">
           {this.props.title}
         </div>
         <a href="/">
