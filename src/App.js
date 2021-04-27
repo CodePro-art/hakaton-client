@@ -1,4 +1,3 @@
-
 import "./App.css";
 import React, { useState } from "react";
 import axios from "axios";
@@ -10,6 +9,7 @@ function App() {
   const [search, setSearch] = useState("");
   const [searches, setSearches] = useState([]);
   const [data, setData] = useState([]);
+  const [lang, setLang] = useState("");
   const sendSearch = async () => {
     console.log("Sending search");
     try {
@@ -23,13 +23,17 @@ function App() {
     }
   };
   return (
-
     <div className="app">
       <Navbar />
 
-      <Search search={setSearch} data={search} send={sendSearch} />
+      <Search
+        search={setSearch}
+        dataLang={lang}
+        data={data}
+        send={sendSearch}
+        lang={setLang}
+      />
       <Display data={data} />
-
     </div>
   );
 }
