@@ -36,10 +36,10 @@ function Display(props) {
   }
   return (
     <div className="display">
+    {(props.data === 'loading')? <p>loading</p> : null}
     {props.data.content? renderContent(): null}
-    {(props === 'loading')? 'loading' : null}
     </div>
   );
 }
-
+    // 
 export default Display;
