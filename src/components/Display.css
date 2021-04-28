@@ -1,8 +1,19 @@
 .display {
+  width: 100%;
   margin: auto;
   height: fit-content;
   padding: 3rem 4rem 6rem 4rem;
   background-color: floralwhite;
+}
+.display_loding-gif{
+  border-radius: 50%;
+  height: 10rem;
+  width: 10rem;
+  display: block;
+  margin: auto;
+}
+.display_loding-txt{
+  text-align: center;
 }
 .display_header{
   display: flex;
@@ -28,4 +39,10 @@
   max-width: 900px;
   margin: auto;
   padding-top: 3rem;
+}
+.display_txt.right{
+  text-align: right;
+}
+.display_txt.left{
+  text-align: left;
 }
