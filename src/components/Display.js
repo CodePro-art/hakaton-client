@@ -7,7 +7,6 @@ function Display(props) {
   // story loding - props === 'loading'
   // get story data - props === obj
   
-  console.log(props.data);
   const renderLoding = () => {
     const lodingGif = 'https://cdn.dribbble.com/users/149180/screenshots/3208433/book_preloader.gif';
     return (
