@@ -5,7 +5,7 @@ import Search from "./components/Search";
 import Display from "./components/Display";
 import Navbar from "./components/Navbar";
 import Card from './components/Card';
-
+import Footer from './components/footer';
 function App() {
 
   const [search, setSearch] = useState("");
@@ -64,6 +64,7 @@ function App() {
       <div className="cards-container">
         {renderCards(cards)}
       </div>
+      <Footer/>
     </div>
   );
 }
