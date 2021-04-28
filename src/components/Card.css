@@ -17,6 +17,7 @@
 
 .cover{
   width: 300px;
+  cursor: pointer;
 }
 .story-title{
   font-family: 'Rubik', sans-serif;
