@@ -6,17 +6,18 @@ export default class card extends Component {
     url:this.props.url 
   }
 
-  sendUrl = () => this.state.url
-
+  sendUrl = () => {
+    this.props.sendResult(this.state.url)
+  }
+  
   render() {
     return (
       <div className="card-container">
         <div className="story-title">
           {this.props.title}
         </div>
-        <a href="/">
-          <img className="cover" src={this.props.src} alt="story" onClick={this.sendUrl}/>
-        </a>
+        <img className="cover" src={this.props.src} alt="story" onClick={this.sendUrl}/>
+
       </div>
     )
   }
