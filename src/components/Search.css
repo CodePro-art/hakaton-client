@@ -19,8 +19,6 @@
   display: flex;
 }
 .sendBtn {
-  height: 50%;
-  text-align: center;
   background: beige;
   border: 3px solid rgb(196, 192, 192);
   color: gray;
@@ -31,6 +29,8 @@
 }
 .sendBtn:hover {
   background: rgb(197, 197, 159);
+  border: 3px solid #333;
+  color: #222;
 }
 .sendBtn:active{
   background: rgb(139, 139, 139);
@@ -52,17 +52,17 @@
 .langBox {
   display: flex;
   align-items: center;
+
 }
+
 .select {
-  width: auto;
-  padding: 5px 10px;
+  margin: 0px 10px;
+  padding: 5px;
   border-radius: 5px;
   border: 1px solid beige;
-  margin: 0px 10px;
   outline: none;
 }
 .langBox p {
   color: grey;
   font-size: 1em;
-  margin-left: 20px;
 }

@@ -18,14 +18,14 @@ function Search(props) {
           />
         </div>
         <div className="langBox">
-          <span className="searchText">Translate to:
+          <span className="searchText">Translate to:</span>
             <select className="select" onChange={(e) => props.lang(e.target.value)} name="lang" id="lang" >
               <option value="en">English</option>
               <option value="ar">عرب</option>
               <option value="ru">Русский</option>
               <option value="he">עברית</option>
             </select>
-          </span>
+          
           <button className="sendBtn" onClick={() => props.send()}>
             Translate
           </button>
