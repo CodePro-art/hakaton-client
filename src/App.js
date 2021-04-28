@@ -15,6 +15,7 @@ function App() {
 
   const sendSearch = async () => {
     console.log("Sending search");
+    setData('loading')
     try {
       const result = await axios.post("http://localhost:3001/url", {
         url: search,
